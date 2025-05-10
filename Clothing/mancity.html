@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="clothingStyle.css">
+    <title>Man City</title>
+</head>
+<body>
+    <header>
+        <div class="header-block">
+            <a href="../Home page/Home.html" style="text-decoration: none;">
+              <h1 class="logo">MATGARNA</h1>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="imgAndDetails">
+            <img src="mancity 2025.png">
+            <div class="details">
+                <h1>Manchester City Shirt 2025</h1>
+                <strong>380 EGP</strong>
+                <br>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <br>
+                <button onclick="changeMessage()" class="cart" id="add">Add to cart</button>
+            </div>
+            <script>
+                function changeMessage(){
+                    const message = document.getElementById("add");
+                    const orginal = message.innerText;
+                    message.innerText = "Done";
+                    function reset(){
+                        message.innerText = orginal;
+                    }
+                    setTimeout(reset,2000);
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

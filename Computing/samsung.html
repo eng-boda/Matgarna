@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="productstyle.css">
+    <title>product</title>
+</head>
+<body>
+    <header>
+        <div class="header-block">
+            <a href="../Home page/Home.html" style="text-decoration: none;">
+              <h1 class="logo">MATGARNA</h1>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="imgAndDetails">
+            <div class="productImg">
+                <img src="images/monitor.png">
+            </div>
+            <div class="details">
+                <h1>Samsung T350 22 Inch</h1>
+                <strong>3,899 EGP</strong>
+                <br>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <br>
+                <button onclick="changeMessage()" class="cart" id="add">Add to cart</button>
+            </div>
+            <script>
+                function changeMessage(){
+                    const message = document.getElementById("add");
+                    const orginal = message.innerText;
+                    message.innerText = "Done";
+                    function reset(){
+                        message.innerText = orginal;
+                    }
+                    setTimeout(reset,2000);
+                }
+            </script>
+        </div>
+        <table>
+            <tr>
+                <th>
+                    <strong>Size</strong>
+                </th>
+                <td>22 Inch</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Panel Type</strong>
+                </th>
+                <td>IPS Panel</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Resolution</strong>
+                </th>
+                <td>FHD 1920 x 1080</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Flat / Curved</strong>
+                </th>
+                <td>Flat</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Refresh Rate</strong>
+                </th>
+                <td>75Hz</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Response Time</strong>
+                </th>
+                <td>5ms</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Features</strong>
+                </th>
+                <td>
+                    <ul>
+                        <li>3-Sided Borderless Design</li>
+                        <li>IPS Panel</li>
+                        <li>AMD FreeSync</li>
+                        <li>75Hz Refresh Rate</li>
+                        <li>Game Mode</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

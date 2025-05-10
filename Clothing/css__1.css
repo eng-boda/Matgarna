@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('stadium.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.shirts{
+    padding-top: 170px;
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    transition: 0.7s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+}
+.price{
+    font-weight: 700;
+    font-size: 22px;
+    cursor: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f1f1f1;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.columns{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.column h2{
+    margin: 30px;
+    font-size: 2em;
+    font-weight: 500;
+    color: #333;
+}
+.column a{
+    text-decoration: none;
+    color: #555;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    font-size: 17px;
+}
+.column a:hover{
+    color: #000;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 50px;
+    width: 100%;
+}
+.icons a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: right;
+}
+.matgarna{
+    text-align: left;
+    margin-left: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.matgarna a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+.social {
+    display: flex;
+    gap: 15px;
+    text-align: right;
+    margin-right: 100px;
+}
+
+.social a {
+    
+    font-size: 30px;
+    text-decoration: none;
+
+}
+header{
+    border: rgb(255, 255, 255);
+    justify-content: space-between;
+    box-shadow: 0 2px 5px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+.header-block{
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    padding: 30px 5px 30px 5px;
+}
+
+header h1{
+    font-size:3em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+section{
+    padding: 150px 20px 20px 0;
+}

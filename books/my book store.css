@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(pngtree-big-library-books-shelf-abstract-photo-image_2203278.jpg);
+    align-items: start;
+    flex-direction: column;
+}
+
+/* Header */
+
+header{
+    border: rgb(255, 255, 255);
+    justify-content: space-between;
+    box-shadow: 0 2px 5px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+.header-block{
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    padding: 30px 5px 30px 5px;
+}
+
+header h1{
+    font-size:3em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}                                                                
+
+/* Main Section */
+section{
+    padding: 150px 20px 20px 0;
+}
+    /* Write your Code Here */
+    .book-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content:center;
+        padding: 20px;
+      }
+      
+      .book-card {
+        width: 180px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        border: 2px solid #8B4513;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        text-align: center;
+        background-color: #fff;
+        transition: transform 0.3s;
+        transform: translateY(-35px);
+      }
+      
+      .book-card:hover {
+        transform: scale(1.05);
+      }
+      
+      .book-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+      }
+      
+      .book-title {
+        padding: 10px;
+        font-size: 16px;
+        color: #333;
+        background-color: #f4f4f4;
+      }   

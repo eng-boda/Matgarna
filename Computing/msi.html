@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="productstyle.css">
+    <title>product</title>
+</head>
+<body>
+    <header>
+        <div class="header-block">
+            <a href="../Home page/Home.html" style="text-decoration: none;">
+              <h1 class="logo">MATGARNA</h1>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="imgAndDetails">
+            <div class="productImg">
+                <img src="images/msi.png">
+            </div>
+            <div class="details">
+                <h1>MSI Modern 15 F13MG Laptop</h1>
+                <strong>20,999 EGP</strong>
+                <br>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <a><i class="fa-solid fa-star"></i></a>
+                <br>
+                <button onclick="changeMessage()" class="cart" id="add">Add to cart</button>
+            </div>
+            <script>
+                function changeMessage(){
+                    const message = document.getElementById("add");
+                    const orginal = message.innerText;
+                    message.innerText = "Done";
+                    function reset(){
+                        message.innerText = orginal;
+                    }
+                    setTimeout(reset,2000);
+                }
+            </script>
+        </div>
+        <table>
+            <tr>
+                <th>
+                    <strong>Screen size</strong>
+                </th>
+                <td>15.6 Inches</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Color</strong>
+                </th>
+                <td>Silver</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Hard Disk Size</strong>
+                </th>
+                <td>512 GB</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>CPU Model</strong>
+                </th>
+                <td>Core i5</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>RAM</strong>
+                </th>
+                <td>8 GB</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Operating System</strong>
+                </th>
+                <td>DOS</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

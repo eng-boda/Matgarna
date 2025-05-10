@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+* {
+    font-family: 'poppins', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(248, 172, 185);
+    font-family: 'Arial', sans-serif;
+}
+
+.header-block{
+    align-items: center;
+    width: 100%;
+    padding: 30px 5px 30px 5px;
+}
+
+header h1{
+    font-size:3em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #a10808;
+    text-align: center;
+}
+
+h1,
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.beauty-img {
+    width: auto;
+    height: 100vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+    border-radius: 10px;
+    margin-bottom: 110px;
+    padding: 0;
+}
+
+.contener {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.to {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+h2,
+h3 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: 'lobster', cursive;
+    color: #a10808;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.main-btn {
+    color: #efefef;
+    background-color: #a87777;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: flex;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15PX;
+    margin-bottom: 70PX;
+    padding-right: 400;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    transition: 0.7s;
+}
+
+.main-btn:hover {
+    background-color: #531010b3;
+    transform: scale(1.1);
+}
+
+.info {
+    position: absolute;
+    left: 20px;
+    top: 70px;
+}
+
+.pp {
+    font-size: 20px;
+    font-weight: 800;
+    color: #a10808;
+    font-family: 'lobster', cursive;
+}
+
+.title {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    color: #333;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(255, 240, 250);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: #efefef;
+}
+
+.tomain {
+    color: #f5f1f1;
+}
+
+.add-to-card {
+    color: #ffff;
+    background-color: #c71585;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    transition: 0.7s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.add-to-card:hover {
+    background-color: #ff69b4;
+    transform: scale(1.1);
+}
+
+#cartItems {
+    padding: 10px;
+    background-color: #fce4ec;
+    border-radius: 8px;
+    width: 90%;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+#cartItems li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#cartItems input[type="number"] {
+    width: 40px;
+    margin: 0 5px;
+}
+
+#totalPrice {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.buy {
+    color: #ffff;
+    background-color: #c71585;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    transition: 0.7s;
+    position: absolute;
+    right: 20px;
+}
+
+.buy:hover {
+    background-color: #ff69b4;
+    transform: scale(1.1);
+}
+.remove-btn {
+    background-color:#c71585 ;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+  }
+  
+  .remove-btn:hover {
+    background-color: #ff69b4;
+    transform: scale(1.1);
+  }
